@@ -1,0 +1,131 @@
+<div class="form">
+    <h5 class="header" routerLink="/user" style="cursor: pointer;">
+        <i style='font-size:24px' class='fas'>&#xf015;</i>Back to home Page</h5><br>
+</div>
+<br><br>
+<div class="container">
+   <h2>Request For Blood </h2><br><br>
+    <form (ngSubmit)="requestData()">
+        <div class="form">
+            <h3><b>Patient Details</b></h3><br><br>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="patientname">Patient Name </label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)]="request.patientName" name="patientName" placeholder="Patient Name.." required00>
+                </div>
+                <div class="form-group">
+                    <label for="Doctor Name">Doctor Name </label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)]="request.doctorName" name="doctorName" placeholder="Doctor Name.." required>
+                </div>
+                <div class="form-group">
+                    <label for="BloodGroup">Blood Group </label><span style="color:red;">*</span><br>
+                    <select class="form-control" [(ngModel)]="request.bloodGroup" name="BG" required>
+                        <option active >Dont Know</option>
+                        <option>A-</option>
+                        <option>A+</option>
+                        <option>AB-</option>
+                        <option>AB+</option>
+                        <option>B-</option>
+                        <option>B+</option>
+                        <option>O-</option>
+                        <option>O+</option>
+                    </select>
+                </div>
+            </div><br>
+            <br><br>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="state">State</label><span style="color:red;">*</span><br>
+                    <select class="form-control" [(ngModel)]="request.state" name="state" (change)="change($event.target.value)" required>
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="district">District </label><span style="color:red;">*</span><br>
+                    <select class="form-control" [(ngModel)]="request.district" name="district" placeholder="District" required>
+                        <option *ngFor ="let district of districts">{{district}} </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="City">City/Village</label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)]="request.city" name="vilage" placeholder="cityName" required>
+                </div>
+            </div>
+            <br><br><br>
+            <h3>Contact Details </h3>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="contact Name">Contact Name </label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)]="request.contactName" name="cname" placeholder="Contact Name.." required>
+                </div>
+                <div class="form-group">
+                    <label for="Mobile No">Mobile No. </label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)]="request.mobileNumber" name="number" placeholder="Mobile Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateNeeded">Date When Needed </label><span style="color:red;">*</span><br>
+                    <input type="date" class="form-control" [(ngModel)]="request.dateNeeded" name="date" placeholder="Date.." required>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="priorty">Priorty </label><span style="color:red;">*</span><br>
+                    <select class="form-control" [(ngModel)]=" request.priority" name="priorty" required>
+                        <option value="priortyType">--Priorty Type--</option>
+                        <option value="normal">Normal</option>
+                        <option value="early">Early</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email </label><span style="color:red;">*</span><br>
+                    <input type="text" class="form-control" [(ngModel)] ="request.email" name="email" placeholder="email.." required>
+                </div>
+            </div>
+            <br><br>
+            <button class="btn btn-success">Send Request</button>
+        </div>
+    </form>
+    <br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+</div>
+<br><br><br>
+<br><br><br>

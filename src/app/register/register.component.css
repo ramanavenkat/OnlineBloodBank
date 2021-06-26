@@ -1,0 +1,16 @@
+.container{
+    width:500px;
+}
+.form-group{
+    padding: 15px;
+}
+input:focus + label, input:not(:placeholder-shown) + label {
+    opacity:1;
+    transform: scale(0.75) translateY(-70%) translateX(-14px);
+}
+label{
+    color: cornflowerblue;
+}
+h2{
+    color: cornflowerblue;
+}

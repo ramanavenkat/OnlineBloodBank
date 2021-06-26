@@ -1,0 +1,40 @@
+<div class="form">
+    <h5 class="header" routerLink="/admin" style="cursor: pointer;">
+        <i style='font-size:24px' class='fas'>&#xf015;</i>Back to home Page</h5><br>
+</div>
+<div class="container">
+    <h2>Request For Blood</h2>
+    <table class="table table-bordered table-striped text-center">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Blood Group</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Mobile Number</th>
+                <th>State</th>
+                <th>District</th>
+                <th>City</th>
+                <th>CRUD Oper</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of aGetUser;let i =index">
+                <td>{{i+1}}</td>
+                <td>{{data.fullName}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.bloodGroup}}</td>
+                <td>{{data.dob}}</td>
+                <td>{{data.gender}}</td>
+                <td>{{data.mobileNumber}}</td>
+                <td>{{data.state}}</td>
+                <td>{{data.district}}</td>
+                <td>{{data.city}}</td>
+                <td><button (click)="delete(data.id)" class="btn btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

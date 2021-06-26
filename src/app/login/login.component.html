@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngIf="hide">
+        <mat-spinner></mat-spinner>
+        <h3>Please wait...</h3>
+    </div>
+    <div *ngIf="!hide">
+        <h3>Please Login here</h3>
+        <form (ngSubmit)="formSubmit()">
+            <div class="form">
+                <div class="context">
+                    <div class="form-group">
+                        <label for="email">Email/Username</label><span style="color:red;">*</span><br>
+                        <input class="form-control" [(ngModel)]="loginData.email" type="text" name="email" placeholder="email id.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label><span style="color:red;">*</span><br>
+                        <input class="form-control" [(ngModel)]="loginData.password" type="password" name="password" placeholder="Password.." required>
+                    </div>
+                    <button class="btn btn-success">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

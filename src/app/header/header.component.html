@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default" >
+    <div  class="color">
+        <div class="navbar-header" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUL1ZQdQt2E8vLo3-PzcyA3SGscJj1_p3Nb1FxWV60SpWwDK4D1cdnZQ1oloa6_05nRqo&usqp=CAU" alt="">
+            <a  class="navbar-brand">Online Blood Bank Management</a>
+        </div>
+        <div class="collapse navbar-collapse" >
+            <ul class="nav navbar-nav navbar-right bb">
+                <a href="/register" class="btn btn-lg" *ngIf="head">
+                    <i class="material-icons" style="font-size:22px;color:white;">person</i>Register
+                </a>
+                <a href="/login" class="btn btn-lg" *ngIf="head">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a (click)="log()" class="btn btn-lg" *ngIf="!head">
+                    <span class="glyphicon glyphicon-off"></span> Logout
+                </a>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+

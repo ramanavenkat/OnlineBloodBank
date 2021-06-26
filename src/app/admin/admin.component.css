@@ -1,0 +1,105 @@
+.card{
+	background-color: white;
+	width: 200px;
+	height: auto;
+	padding: 30px;
+	margin: 20px;
+	border-radius: 10px;
+}
+.card-header{
+	text-align: center;
+}
+.admin{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.container-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.container-middle{
+	margin-top: 45px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+.gro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.png{
+    width: 270px;
+    height: 260px;
+    float: left;
+    
+}
+h3{
+    text-align: center;
+    color: black;
+}
+.fix{
+    display:flex;
+    flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+}
+.fry{
+    font-size: medium;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form-inline{
+	display: flex;
+	flex-direction: row;
+}
+.main{
+    background-color: lightgrey;
+    padding :20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+    border: 0.5px solid orangered;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    border-radius:12px ;
+    width:90px;
+    height: 90px;
+    margin: 20px;
+    padding-top: 10px;
+    
+}
+h5{
+    text-align: center;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+}
+.col{
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+h6{
+    font-size: 15px;
+}
+.user{
+    background-color: green;
+    color: white;
+}
+.request{
+    background-color: red;
+    color: white;
+}
+

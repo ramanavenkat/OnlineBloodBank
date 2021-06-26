@@ -1,0 +1,105 @@
+<div class="admin">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-inline">
+                <h3 class="card-header"><i style='font-size:24px' class='fas'>&#xf015;</i>Menu</h3><br>
+            </div>
+            <br>
+            <div class="form-inline">
+                <p><i class="material-icons">&#xe7fd;</i></p>
+                <p (click)="dd()" style="cursor: pointer;">DashBoard</p><br>
+            </div>
+            <br>
+            <div class="form-inline">
+                <p><i class="material-icons">&#xe7fb;</i></p>
+                <p style="cursor:pointer;" routerLink="/adminUser">All User</p><br>
+            </div>
+            <br>
+            <div class="form-inline">
+                <p><i class="material-icons">&#xe853;</i></p>
+                <p routerLink="/aProfile" style="cursor: pointer;">Profile</p><br>
+            </div>
+            <br>
+            <div class="form-inline" >
+                <p><i class="material-icons">&#xe3ba;</i></p>
+                <p routerLink="/aDetails" style="cursor:pointer;">Requested for Blood  </p><br>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-body">
+            <h2>WELCOME TO  ADMIN PAGE!!!!!</h2>
+            <div class="container-middle">
+                <div routerLink="/adminUser" style="cursor: pointer;" class="card user">
+                    <h4><i class="material-icons">&#xe7fb;</i>Users available</h4>
+                    <h6>Total Users are : <span>{{d}}</span></h6>
+                </div>
+                <div routerLink="/aDetails" style="cursor: pointer;" class="card request">
+                    <h4><i class="material-icons">&#xe3ba;</i>Requested for Blood</h4>
+                    <h6>Total User request for blood :<span>{{c}}</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="container main">
+    <h2 class="donor"><b>Total Blood Donors Register With Blood Bank</b></h2>
+    <div class="gro">
+        <div class="box">
+            <h5>A-</h5>
+            <p>{{count[0]}}</p>
+        </div>
+        <div class="box">
+            <h5>A+</h5>
+            <p>{{count[1]}}</p>
+        </div>
+        <div class="box">
+            <h5>B-</h5>
+            <p>{{count[2]}}</p>
+        </div>
+        <div class="box">
+            <h5>B+</h5>
+            <p>{{count[3]}}</p>
+        </div>
+    </div>
+    <div class="gro">
+        <div class="box">
+            <h5>AB-</h5>
+            <p>{{count[4]}}</p>
+        </div>
+        <div class="box">
+            <h5>AB+</h5>
+            <p>{{count[5]}}</p>
+        </div>
+        <div class="box">
+            <h5>O-</h5>
+            <p>{{count[6]}}</p>
+        </div>
+        <div class="box">
+            <h5>O+</h5>
+            <p>{{count[7]}}</p>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<br><br><br>
+<div class="container fix">
+    <img class="png"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRobD1AbyCaL1SFZtSktNz3QZ7qHyh0Wybg&usqp=CAU"
+        alt=" ">
+    <div class="fry">
+        <h3><b>Why Should Donate Blood?</b></h3>
+        <p>Safe blood saves lives.
+            Blood is needed by women with complications during pregnancy and childbirth,
+            children with severe anaemia, often resulting from malaria or malnutrition,
+            accident victims and surgical and cancer patients.There is a constant need for a regular supply of blood because
+            it can be stored only for a limited period of time before use. Regular blood donation by a sufficient number of
+            healthy people is needed to ensure that blood will always be available whenever and wherever it is needed.</p>
+
+    </div>
+</div>
+<br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>

@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="form">
+        <h5 class="header" routerLink="/admin" style="cursor: pointer;">
+            <i style='font-size:24px' class='fas'>&#xf015;</i>Back to home Page</h5><br>
+    </div>
+    <div class="col-md-8">
+        <h2 class="header">User Profile</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">Full Name</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.fullName}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">Email</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.email}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">Phone Number</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.mobileNumber}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">Blood Group</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.bloodGroup}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">DOB</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.dob}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">State</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.state}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">District</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.district}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 class="mb-0">city</h4>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        {{data.city}}
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

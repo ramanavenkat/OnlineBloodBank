@@ -1,0 +1,26 @@
+.card{
+    border: 0.5px solid white;
+    border-radius: 12px;
+    height: 300px;
+}
+.form-inline{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-control{
+    width:200px;
+}
+.container{
+    color: white;
+}
+button{
+    margin-left: 50px;
+}
+table{
+    background-color: black;
+    color: white;
+}
+.header{
+    color: white;
+}

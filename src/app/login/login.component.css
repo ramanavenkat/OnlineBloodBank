@@ -1,0 +1,11 @@
+.container{
+    width:400px;
+    height: 100vh;
+    padding-top:30px;
+}
+label{
+    color: cornflowerblue;
+}
+h3{
+    color: cornflowerblue;
+}

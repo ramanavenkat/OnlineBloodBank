@@ -1,0 +1,21 @@
+.form-inline{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    color:white
+}
+h3{
+    text-align: center;
+}
+.form-control{
+    width: 200px;
+}
+.header{
+    color: white;
+    float: left;
+}
+button{
+    position: absolute;
+    right:600px;
+}
